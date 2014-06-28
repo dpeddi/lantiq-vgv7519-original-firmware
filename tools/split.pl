@@ -9,7 +9,7 @@ $n = 0;
 #for $match (split(/(?=\x32\x54\x76\x98)|(?=\xcd\xab\x89\x67)|(?=\x5d\x00\x00\x80)|(?=\xff\xff\xff\xff\xff\xff\xff\xff)/)) {
 for $match (split(/(?=\x32\x54\x76\x98)|(?=\x5d\x00\x00\x80)|(?=\xff\xff\xff\xff\xff\xff\xff\xff)/)) {
       if ($match =~ /\x32\x54\x76\x98.*/) {
-        $fname=sprintf("%02d",++$n)."_code".".obfuscated";
+        $fname=sprintf("%02d",++$n)."_code".".lzma.obfuscated";
 #      } elsif ($match =~ /\xcd\xab\x89\x67.*/) {
 #        $fname=sprintf("%02d",++$n)."_sep.obfuscated";    
       } elsif ($match =~ /\x5d\x00\x00\x80.*/) {
