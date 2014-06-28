@@ -1,0 +1,12 @@
+- run:
+g++ -o ConsoleApplication2 ConsoleApplication2.cpp
+
+- rename flash dumps to
+vgv7519_flash1.bin
+vgv7519_flash2.bin
+
+- run:
+./ConsoleApplication2
+
+
+./split.pl < vgv7519_flash1_9_code_image_0.bin
